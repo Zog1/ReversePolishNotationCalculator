@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.kalkulator.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A47EFF"
+        android:fontFamily="@font/nunito_semibold"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:text="Calculator"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"></TextView>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/top_view_bg">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/lato"
+            android:gravity="right"
+            android:paddingRight="60sp"
+            android:paddingBottom="60sp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="#FFFFFF"
+                android:minHeight="80dp"
+                android:text="C"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_power"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="#FFFFFF"
+                android:minHeight="80dp"
+                android:text="num"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_sqrt"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="#FFFFFF"
+                android:minHeight="80dp"
+                android:text="√"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_binary"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="#FFFFFF"
+                android:minHeight="80dp"
+                android:text="BIN"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_seven"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_eight"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_nine"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_multiple"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="X"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_five"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_six"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dot"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="."
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_zero"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_divide"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:minHeight="80dp"
+                android:text="/"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_equal"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#20000000"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="#FFFFFF"
+                android:minHeight="80dp"
+                android:text="="
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
